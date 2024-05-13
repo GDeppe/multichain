@@ -1,0 +1,41 @@
+services:
+  multichain-node1:
+    build: .
+    ports:
+      - "8000:2918"
+      - "8001:2919"
+    volumes:
+      - ./chain1:/root/.multichain/chain1
+    mem_limit: 1g
+    restart: always
+
+  multichain-node2:
+    build: .
+    ports:
+      - "2920:2918"
+      - "2921:2919"
+    volumes:
+      - ./chain2:/root/.multichain/chain2
+    mem_limit: 1g
+    restart: always
+
+  multichain-node3:
+    build: .
+    ports:
+      - "2922:2918"
+      - "2923:2919"
+    volumes:
+      - ./chain3:/root/.multichain/chain3
+    mem_limit: 1g
+    restart: always
+
+  multichain-node4:
+    build: .
+    ports:
+      - "2924:2918"
+      - "2925:2919"
+    volumes:
+      - ./chain4:/root/.multichain/chain4
+    mem_limit: 1g
+    restart: always
+    ##etc etc etc
