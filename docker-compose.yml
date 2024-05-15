@@ -5,8 +5,9 @@ services:
       - "8000:2918"
       - "8001:2919"
     volumes:
-      - ./chain1:/root/.multichain/chain1
+      - ./chain1:/root/.multichain/base_chain_v2
     mem_limit: 1g
+    cpus: 0.5
     restart: always
 
   multichain-node2:
@@ -15,8 +16,9 @@ services:
       - "2920:2918"
       - "2921:2919"
     volumes:
-      - ./chain2:/root/.multichain/chain2
+      - ./chain2:/root/.multichain/base_chain_v2
     mem_limit: 1g
+    cpus: 0.5
     restart: always
 
   multichain-node3:
@@ -25,8 +27,9 @@ services:
       - "2922:2918"
       - "2923:2919"
     volumes:
-      - ./chain3:/root/.multichain/chain3
+      - ./chain3:/root/.multichain/base_chain_v2
     mem_limit: 1g
+    cpus: 0.5
     restart: always
 
   multichain-node4:
@@ -35,7 +38,7 @@ services:
       - "2924:2918"
       - "2925:2919"
     volumes:
-      - ./chain4:/root/.multichain/chain4
+      - ./chain4:/root/.multichain/base_chain_v2
     mem_limit: 1g
+    cpus: 0.5
     restart: always
-    ##etc etc etc
