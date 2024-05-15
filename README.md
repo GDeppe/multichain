@@ -40,7 +40,10 @@ Loops through the containers and obtains the address from each miner.
 getamount.sh
 ```
 Loops through the containers, collects the amount of Base mined and totals the amount at the end.
-
+Make sure to make the scripts executable
+```
+chmod +x getaddresses.sh
+```
 ### Starting containers
 This uses docker compose which should be installed by default in recent version of Ubuntu. See the Docker website if you need to install Docker or Docker Compose
 ```
