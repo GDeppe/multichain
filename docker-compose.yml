@@ -43,7 +43,7 @@ services:
     cpus: 0.5
     restart: always
 
-      multichain-node5:
+  multichain-node5:
     build: .
     ports:
       - "2926:2918"
