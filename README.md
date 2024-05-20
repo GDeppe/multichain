@@ -32,6 +32,11 @@ For each container be sure to change your ingress ports to prevent clashes in Do
 Modify the CPU for your needs, I would recommend a setting of 0.5 if you aren't sure. Volumes are persistent and will be created in your working directory, this aids recovery after a reboot or container failure.
 
 ### Scripts
+The following are loaded in by Docker when building, you don't need to run these manually
+```
+send.sh sendcron runchain.sh
+```
+Other scripts to use whenever you need
 ```
 getaddresses.sh
 ```
@@ -40,7 +45,15 @@ Loops through the containers and obtains the address from each miner.
 getamount.sh
 ```
 Loops through the containers, collects the amount of Base mined and totals the amount at the end.
-Make sure to make the scripts executable
+```
+sendbase.sh
+```
+Sometimes the containers don't run the send script, you can use sendbase.sh instead, it loops through each container and sends BASE
+```
+bot.sh
+```
+Captures total mined and sends it to a Telegram bot. See Telegram docs on creating a bot and using the API
+Make sure to make the scripts executable, example;
 ```
 chmod +x getaddresses.sh
 ```
