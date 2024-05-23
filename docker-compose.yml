@@ -7,7 +7,7 @@ services:
     volumes:
       - ./chain1:/root/.multichain/base_chain_v2
     mem_limit: 1g
-    cpus: 0.2
+    cpus: 0.3
     restart: always
 
   multichain-node2:
@@ -18,7 +18,7 @@ services:
     volumes:
       - ./chain2:/root/.multichain/base_chain_v2
     mem_limit: 1g
-    cpus: 0.2
+    cpus: 0.3
     restart: always
 
   multichain-node3:
@@ -29,7 +29,7 @@ services:
     volumes:
       - ./chain3:/root/.multichain/base_chain_v2
     mem_limit: 1g
-    cpus: 0.2
+    cpus: 0.3
     restart: always
 
   multichain-node4:
@@ -40,7 +40,7 @@ services:
     volumes:
       - ./chain4:/root/.multichain/base_chain_v2
     mem_limit: 1g
-    cpus: 0.2
+    cpus: 0.3
     restart: always
 
   multichain-node5:
@@ -51,7 +51,7 @@ services:
     volumes:
       - ./chain5:/root/.multichain/base_chain_v2
     mem_limit: 1g
-    cpus: 0.2
+    cpus: 0.3
     restart: always
 
   multichain-node6:
@@ -62,5 +62,5 @@ services:
     volumes:
       - ./chain6:/root/.multichain/base_chain_v2
     mem_limit: 1g
-    cpus: 0.2
+    cpus: 0.3
     restart: always
