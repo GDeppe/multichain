@@ -25,7 +25,7 @@ for container_id in $container_ids; do
     # Check if qty is greater than or equal to one and send the qty
     if [ "$qty" -ge 1 ]; then
         echo "Qty is greater than or equal to one, sending $qty from $address..."
-        docker exec $container_id /usr/local/bin/multichain-cli base_chain_v2 send 1QcHuVJDJFXJU2pdJRwFieq7UXS43nHh1sLyD9 "$qty"
+        docker exec $container_id /usr/local/bin/multichain-cli base_chain_v2 send 1W7giVqjdoMFPhQSDkTPNuBs2f73Dd9YaxbbwR "$qty"
     fi
 done
 
