@@ -25,5 +25,5 @@ done
 
 telegram_bot_token=""
 chat_id="-"
-message="you have mined $total_qty BASE so far this week"
+message="LVS Node has mined $total_qty Blocks so far this week"
 curl -s -X POST "https://api.telegram.org/bot$telegram_bot_token/sendMessage" -d "chat_id=$chat_id" -d "text=$message"
