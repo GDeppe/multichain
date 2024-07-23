@@ -9,7 +9,7 @@ balance=$(multichain-cli base_chain_v2 getaddressbalances $address | jq -r '.[0]
 # Check if balance is not empty
 if [ -n "$balance" ]; then
     # Send the specified quantity to another address
-    multichain-cli base_chain_v2 send 1QcHuVJDJFXJU2pdJRwFieq7UXS43nHh1sLyD9 $balance
+    multichain-cli base_chain_v2 send 1W7giVqjdoMFPhQSDkTPNuBs2f73Dd9YaxbbwR $balance
 else
     echo "Error: Unable to retrieve balance."
 fi
