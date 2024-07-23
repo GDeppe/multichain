@@ -7,7 +7,7 @@ services:
     volumes:
       - ./chain1:/root/.multichain/base_chain_v2
     mem_limit: 1g
-    cpus: 0.3
+    cpus: 0.5
     restart: always
 
   multichain-node2:
@@ -18,7 +18,7 @@ services:
     volumes:
       - ./chain2:/root/.multichain/base_chain_v2
     mem_limit: 1g
-    cpus: 0.3
+    cpus: 0.5
     restart: always
 
   multichain-node3:
@@ -29,7 +29,7 @@ services:
     volumes:
       - ./chain3:/root/.multichain/base_chain_v2
     mem_limit: 1g
-    cpus: 0.3
+    cpus: 0.5
     restart: always
 
   multichain-node4:
@@ -40,7 +40,7 @@ services:
     volumes:
       - ./chain4:/root/.multichain/base_chain_v2
     mem_limit: 1g
-    cpus: 0.3
+    cpus: 0.5
     restart: always
 
   multichain-node5:
@@ -51,7 +51,7 @@ services:
     volumes:
       - ./chain5:/root/.multichain/base_chain_v2
     mem_limit: 1g
-    cpus: 0.3
+    cpus: 0.5
     restart: always
 
   multichain-node6:
@@ -62,5 +62,313 @@ services:
     volumes:
       - ./chain6:/root/.multichain/base_chain_v2
     mem_limit: 1g
-    cpus: 0.3
+    cpus: 0.5
+    restart: always
+
+  multichain-node7:
+    build: .
+    ports:
+      - "2930:2918"
+      - "2931:2919"
+    volumes:
+      - ./chain7:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node8:
+    build: .
+    ports:
+      - "2932:2918"
+      - "2933:2919"
+    volumes:
+      - ./chain8:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node9:
+    build: .
+    ports:
+      - "2934:2918"
+      - "2935:2919"
+    volumes:
+      - ./chain9:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node10:
+    build: .
+    ports:
+      - "2936:2918"
+      - "2937:2919"
+    volumes:
+      - ./chain10:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node11:
+    build: .
+    ports:
+      - "2938:2918"
+      - "2939:2919"
+    volumes:
+      - ./chain11:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node12:
+    build: .
+    ports:
+      - "2940:2918"
+      - "2941:2919"
+    volumes:
+      - ./chain12:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node13:
+    build: .
+    ports:
+      - "2942:2918"
+      - "2943:2919"
+    volumes:
+      - ./chain13:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node14:
+    build: .
+    ports:
+      - "2944:2918"
+      - "2945:2919"
+    volumes:
+      - ./chain14:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node15:
+    build: .
+    ports:
+      - "2946:2918"
+      - "2947:2919"
+    volumes:
+      - ./chain15:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node16:
+    build: .
+    ports:
+      - "2948:2918"
+      - "2949:2919"
+    volumes:
+      - ./chain16:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node17:
+    build: .
+    ports:
+      - "2950:2918"
+      - "2951:2919"
+    volumes:
+      - ./chain17:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node18:
+    build: .
+    ports:
+      - "2952:2918"
+      - "2953:2919"
+    volumes:
+      - ./chain18:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node19:
+    build: .
+    ports:
+      - "2954:2918"
+      - "2955:2919"
+    volumes:
+      - ./chain19:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node20:
+    build: .
+    ports:
+      - "2956:2918"
+      - "2957:2919"
+    volumes:
+      - ./chain20:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node21:
+    build: .
+    ports:
+      - "2958:2918"
+      - "2959:2919"
+    volumes:
+      - ./chain21:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node22:
+    build: .
+    ports:
+      - "2960:2918"
+      - "2961:2919"
+    volumes:
+      - ./chain22:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node23:
+    build: .
+    ports:
+      - "2962:2918"
+      - "2963:2919"
+    volumes:
+      - ./chain23:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node24:
+    build: .
+    ports:
+      - "2964:2918"
+      - "2965:2919"
+    volumes:
+      - ./chain24:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node25:
+    build: .
+    ports:
+      - "2966:2918"
+      - "2967:2919"
+    volumes:
+      - ./chain25:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node26:
+    build: .
+    ports:
+      - "2968:2918"
+      - "2969:2919"
+    volumes:
+      - ./chain26:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node27:
+    build: .
+    ports:
+      - "2970:2918"
+      - "2971:2919"
+    volumes:
+      - ./chain27:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node28:
+    build: .
+    ports:
+      - "2972:2918"
+      - "2973:2919"
+    volumes:
+      - ./chain28:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node29:
+    build: .
+    ports:
+      - "2974:2918"
+      - "2975:2919"
+    volumes:
+      - ./chain29:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node30:
+    build: .
+    ports:
+      - "2976:2918"
+      - "2977:2919"
+    volumes:
+      - ./chain30:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node31:
+    build: .
+    ports:
+      - "2978:2918"
+      - "2979:2919"
+    volumes:
+      - ./chain31:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node32:
+    build: .
+    ports:
+      - "2980:2918"
+      - "2981:2919"
+    volumes:
+      - ./chain32:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node33:
+    build: .
+    ports:
+      - "2982:2918"
+      - "2983:2919"
+    volumes:
+      - ./chain33:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
+    restart: always
+
+  multichain-node34:
+    build: .
+    ports:
+      - "2984:2918"
+      - "2985:2919"
+    volumes:
+      - ./chain34:/root/.multichain/base_chain_v2
+    mem_limit: 1g
+    cpus: 0.5
     restart: always
