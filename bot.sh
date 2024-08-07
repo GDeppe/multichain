@@ -3,27 +3,22 @@
 # Initialize total quantity
 total_qty=0
 
-# Get the list of running Docker container IDs
-container_ids=$(docker ps --format '{{.ID}}')
+# Get the address
+address=$(multichain-cli base_chain_v2 getaddresses | jq -r '.[0]')
+    
+# Get the qty for the address
+qty=$(multichain-cli base_chain_v2 getaddressbalances $address | jq -r '.[0].qty')
+    
+# Add qty to total
+total_qty=$((total_qty + qty))
+    
+# Output the address and qty
+echo "Address: $address, Qty: $qty"
 
-# Loop through each container
-for container_id in $container_ids; do
-    echo "Getting address and qty for container $container_id..."
-    
-    # Get the address
-    address=$(docker exec $container_id /usr/local/bin/multichain-cli base_chain_v2 getaddresses | jq -r '.[0]')
-    
-    # Get the qty for the address
-    qty=$(docker exec $container_id /usr/local/bin/multichain-cli base_chain_v2 getaddressbalances $address | jq -r '.[0].qty')
-    
-    # Add qty to total
-    total_qty=$((total_qty + qty))
-    
-    # Output the address and qty
-    echo "Address: $address, Qty: $qty"
-done
-
+# Telegram bot credentials
 telegram_bot_token=""
 chat_id="-"
 message="LVS Node has mined $total_qty Blocks so far this week"
+
+# Send message via Telegram bot
 curl -s -X POST "https://api.telegram.org/bot$telegram_bot_token/sendMessage" -d "chat_id=$chat_id" -d "text=$message"
